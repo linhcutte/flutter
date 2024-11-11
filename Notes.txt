@@ -21,3 +21,10 @@ https://docs.google.com/spreadsheets/d/1eRKIop4bQpYnLHnVwfTaN9DdVcdeworUegPMm3ij
 =============================================================================================
 
 https://www.linkedin.com/in/nhat-tung-le-5a1773168/
+
+
+=============================================================================================
+https://code.visualstudio.com/
+https://notepad-plus-plus.org/downloads/
+https://dart.dev/get-dart/archive
+https://developer.android.com/ 
