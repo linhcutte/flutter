@@ -1,0 +1,38 @@
+import 'nhanvien.dart';
+
+class NhanVienBanHang extends NhanVien {
+  double _doanhSo;
+  double _hoaHong;
+
+  NhanVienBanHang(String maNV, String hoTen, double luongCoBan, this._doanhSo,
+      this._hoaHong)
+      : super(maNV, hoTen, luongCoBan);
+  
+  // Getters
+  double get doanhSo => _doanhSo;
+  double get hoaHong => _hoaHong;
+
+  // Setters
+  set doanhSo(double doanhSo) {
+    if (doanhSo >= 0) {
+      _doanhSo = doanhSo;
+    }
+  }
+
+  set hoaHong(double hoaHong) {
+    if (hoaHong >= 0 && hoaHong <= 1) {
+      _hoaHong = hoaHong;
+    }
+  }
+
+  @override
+  double tinhLuong(){
+     return luongCoBan + doanhSo*hoaHong;
+  }
+  @override
+  void hienThiThongTin() {
+    super.hienThiThongTin();
+    print("Doanh số: $doanhSo");
+    print("Hoa hồng: $hoaHong");
+  }
+}
