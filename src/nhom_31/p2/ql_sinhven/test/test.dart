@@ -1,5 +1,5 @@
-import 'lophoc.dart';
-import 'sinhvien.dart';
+import '../models/lophoc.dart';
+import '../models/sinhvien.dart';
 
 void main(){
   var sv = SinhVien("Nguyen Van A", 20, 'SV001', 8.5);
@@ -15,7 +15,6 @@ void main(){
   // Test phuong thuc xep loai
   // .... 
   print(sv.xepLoai());
-
 
   var lopHoc = Lophoc("21DTHF1");
   lopHoc.themSinhVien(SinhVien("Nguyen Van A", 20, 'SV001', 8.5));
