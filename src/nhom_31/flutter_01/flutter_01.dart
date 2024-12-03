@@ -27,3 +27,30 @@ class ScaffoldExample extends StatelessWidget{
     );
   }
 }
+
+
+class RowExample extends StatelessWidget{
+  const RowExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Row Example'),
+      ),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(Icons.email),
+            Text('lenhattung@gmail.com')
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
