@@ -136,3 +136,30 @@ class ContainerExample extends StatelessWidget {
     );
   }
 }
+
+class SizedBoxExample extends StatelessWidget{
+  const SizedBoxExample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Row Example'),
+      ),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(Icons.email),
+            SizedBox(width: 25,),
+            Text('lenhattung@gmail.com')
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
