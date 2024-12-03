@@ -163,3 +163,57 @@ class SizedBoxExample extends StatelessWidget{
     );
   }
 }
+
+
+class IconButtonExample extends StatelessWidget{
+  const IconButtonExample({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Stack Example'),
+      ),
+      body: Center(
+        child:  IconButton(
+          icon: Icon(Icons.thumb_up),
+          onPressed: (){
+            print('Icon Button Pressed!');
+          },
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+class ImageExample extends StatelessWidget{
+  const ImageExample({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Images Example'),
+      ),
+      body: Center(
+        child:  Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset('../assets/images/01.jpg',
+                width: 750,
+                height: 350,
+                fit: BoxFit.cover,
+              ),
+              SizedBox(height: 20), // Khoảng cách giữa các hìn
+              Image.network('https://picsum.photos/200/200')
+            ]),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
