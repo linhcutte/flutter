@@ -45,6 +45,15 @@ class _PostScreenState extends State<PostScreen> {
                   child: ListTile(
                     title: Text(posts[index].title!),
                     subtitle: Text(posts[index].body!),
+                    // onTap: () {
+                    //   Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => PostDetailScreen(
+                    //         posts[index].id!,
+                    //     ),
+                    //   )
+                    // }
                   ),
                 );
               },
