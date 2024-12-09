@@ -52,4 +52,3 @@ https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0
 
 =============================================================================================
 
-Bài kiểm tra 1 :  https://forms.gle/sukB7mkxNSZCuUGi9
