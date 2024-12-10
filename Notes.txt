@@ -42,3 +42,13 @@ Videos:
 =============================================================================================
 
 
+Reads:
+https://www.codecademy.com/article/check-your-flutter-installation-with-flutter-doctor
+https://www.codecademy.com/article/configuring-android-devices-for-flutter
+https://www.codecademy.com/article/creating-our-first-flutter-app-in-android-studio
+https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0
+
+
+
+=============================================================================================
+
